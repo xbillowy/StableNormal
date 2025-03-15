@@ -20,3 +20,8 @@ python run.py \
 + `resolusion`: The network processing resolution, default to 1024.
 + `align`: The network alignment resolution, default to 64.
 + `scenes`: This argument is optional, if not provided, all scenes in the dataset will be processed, otherwise only the specified scenes will be processed, split by space.
+
+## Notes
+
++ We use `Stable-X/yoso-normal-v0-3` and `Stable-X/stable-normal-v0-1` for now.
++ Resolution issue: https://github.com/Stable-X/StableNormal/issues/31
