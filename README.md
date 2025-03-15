@@ -1,16 +1,22 @@
----
-title: StableNormal
-emoji: 🏵️
-colorFrom: blue
-colorTo: red
-sdk: gradio
-sdk_version: 4.32.2
-app_file: app.py
-pinned: true
-license: cc-by-sa-4.0
-models:
-- Stable-X/stable-normal-v0-1
-- Stable-X/yoso-normal-v0-1
-hf_oauth: true
-hf_oauth_expiration_minutes: 43200
----
+# StableNormal
+
+Forked from `https://huggingface.co/spaces/Stable-X/StableNormal`.
+
+This is the modified fork version of the [StableNormal](https://huggingface.co/spaces/Stable-X/StableNormal) gradio space for [EasyVolcap](https://github.com/zju3dv/EasyVolcap) format dataset processing.
+
+## Usage
+
+Once you have a prepared [EasyVolcap](https://github.com/zju3dv/EasyVolcap?tab=readme-ov-file#dataset-structure) format dataset, and have [EasyVolcap](https://github.com/zju3dv/EasyVolcap) installed, you can use the following command to compute the monocular normal maps for the dataset:
+
+```bash
+python run.py \
+    --data_root /path/to/dataset/root \
+    --resolusion 1024 \
+    --align 64 \
+    --scenes /list/of/scene/names
+```
+
++ `data_root`: The root directory of the dataset, including a list of scenes inside.
++ `resolusion`: The network processing resolution, default to 1024.
++ `align`: The network alignment resolution, default to 64.
++ `scenes`: This argument is optional, if not provided, all scenes in the dataset will be processed, otherwise only the specified scenes will be processed, split by space.
