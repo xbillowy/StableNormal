@@ -4,6 +4,14 @@ Forked from `https://huggingface.co/spaces/Stable-X/StableNormal`.
 
 This is the modified fork version of the [StableNormal](https://huggingface.co/spaces/Stable-X/StableNormal) gradio space for [EasyVolcap](https://github.com/zju3dv/EasyVolcap) format dataset processing.
 
+## Installation
+
+To install the required dependencies, you can use the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
 Once you have a prepared [EasyVolcap](https://github.com/zju3dv/EasyVolcap?tab=readme-ov-file#dataset-structure) format dataset, and have [EasyVolcap](https://github.com/zju3dv/EasyVolcap) installed, you can use the following command to compute the monocular normal maps for the dataset:
