@@ -144,7 +144,7 @@ def main(args):
             # Loop through all the views
             for f in sorted(os.listdir(images_path)):
                 image_file = join(images_path, f)
-                normal_file = join(normals_dir, f)
+                normal_file = join(normals_path, f)
 
                 # Check if the normal image already exists
                 if os.path.exists(normal_file):
