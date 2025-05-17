@@ -9,7 +9,7 @@ This is the modified fork version of the [StableNormal](https://huggingface.co/s
 To install the required dependencies, you can use the following command:
 
 ```bash
-pip install -r requirements.txt
+sh setup.sh
 ```
 
 ## Usage
